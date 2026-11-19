@@ -1,0 +1,95 @@
+const activityRegistrationConfig = {
+  collection: "activitiesRegistrations",
+  registrationType: "Activities",
+  singular: "activity",
+  nameField: "activityName",
+  nameLabel: "Activity name",
+  categoryField: "activityCategory",
+  categoryLabel: "Activity category",
+  categoryHierarchy: true,
+  categories: {
+    "Adventure & Outdoor": {
+      "Trekking & Hiking": ["Day Trek", "Mountain Trek", "Nature Walk"],
+      "Adventure Sports": ["Rock Climbing", "Ziplining", "Rappelling"],
+      Cycling: ["Guided Cycling", "Mountain Biking"],
+    },
+    "Water Activities": {
+      Boating: ["Kayaking", "Canoeing", "Boat Tours"],
+      "Water Sports": ["Jet Skiing", "Surfing", "Scuba Diving", "Snorkelling"],
+    },
+    "Tours & Sightseeing": {
+      "City Tours": ["Guided City Tour", "Heritage Walk"],
+      "Travel Experiences": ["Sightseeing Tour", "Local Guided Tour"],
+    },
+    "Nature & Wildlife": {
+      Wildlife: ["Wildlife Safari", "Bird Watching"],
+      "Nature Experiences": ["Nature Walk", "Camping"],
+    },
+    "Workshops & Learning": {
+      "Arts & Crafts": ["Pottery", "Painting", "Handicrafts"],
+      "Skill Workshops": ["Photography", "Dance", "Music"],
+    },
+    "Cultural Experiences": {
+      "Heritage & Culture": ["Cultural Tours", "Traditional Art"],
+    },
+    "Food Experiences": {
+      "Cooking & Dining": ["Cooking Classes", "Food Walks"],
+    },
+    "Photography Experiences": {
+      Photography: ["Portrait Photography", "Travel Photography"],
+    },
+    "Wellness Experiences": {
+      Wellness: ["Yoga", "Meditation", "Wellness Sessions"],
+    },
+    "Indoor Activities": {
+      "Recreational Experiences": ["Indoor Games", "Interactive Experiences"],
+    },
+  },
+  mainCategoryField: "activityMainCategory",
+  subcategoryField: "activitySubcategory",
+  providerTypeField: "providerType",
+  providerTypeOtherField: "otherProviderType",
+  providerTypes: [
+    "Individual Guide",
+    "Tour Operator",
+    "Adventure Operator",
+    "Workshop Organizer",
+    "Experience Provider",
+    "Travel Agency",
+    "Event Organizer",
+    "Other",
+  ],
+  locationTypeField: "locationType",
+  locationTypeOtherField: "otherLocationType",
+  locationTypes: [
+    "Fixed Venue",
+    "Meeting Point",
+    "Customer Location",
+    "Online",
+    "Other",
+  ],
+  locationTitle: "Location details",
+  availabilityTitle: "Weekly availability",
+  showDayPresets: true,
+  detailsTitle: "Activity information",
+  photosTitle: "Activity images",
+  showLogoUpload: false,
+  regionLabel: "State",
+  postalCodeLabel: "PIN code",
+  postalCodePattern: /^\d{6}$/,
+  minimumParticipantsField: "minimumParticipants",
+  descriptionField: "activityDescription",
+  descriptionLabel: "Activity description",
+  capacityField: "groupSize",
+  capacityLabel: "Maximum participants / capacity",
+  capacityHelp: "Maximum number of participants per session.",
+  durationField: "durationMinutes",
+  facilitiesRequired: false,
+  photosRequired: true,
+  extraInitialValues: {
+    otherProviderType: "",
+    otherLocationType: "",
+  },
+};
+
+export default activityRegistrationConfig;

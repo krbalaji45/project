@@ -1,0 +1,135 @@
+.apr-page .event-category-options {
+  min-width: 0;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--sr-line);
+  border-radius: 8px;
+}
+
+.apr-page .event-category-options legend {
+  padding: 0 5px;
+  color: #25332f;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.apr-page .event-category-add {
+  min-height: 32px;
+  margin-top: 10px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--sr-green);
+  color: white;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.apr-page .event-details-grid,
+.apr-page .event-category-fields-grid {
+  align-items: start;
+}
+
+.apr-page .event-details-grid > .sr-field,
+.apr-page .event-category-fields-grid > .sr-field {
+  align-content: start;
+}
+
+.apr-page .event-schedule-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: start;
+}
+
+.apr-page .event-schedule-grid > .sr-field:nth-child(-n + 3) {
+  grid-column: span 2;
+}
+
+.apr-page .event-schedule-grid > .sr-field:nth-child(n + 4) {
+  grid-column: span 3;
+}
+
+.apr-page .event-schedule-date-input {
+  cursor: pointer;
+}
+
+.apr-page .event-schedule-date-input::-webkit-calendar-picker-indicator {
+  display: block;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.apr-page .event-details-grid input[type="number"],
+.apr-page .event-category-options input[type="number"],
+.apr-page .event-schedule-grid input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.apr-page .event-details-grid input[type="number"]::-webkit-inner-spin-button,
+.apr-page .event-details-grid input[type="number"]::-webkit-outer-spin-button,
+.apr-page .event-category-options input[type="number"]::-webkit-inner-spin-button,
+.apr-page .event-category-options input[type="number"]::-webkit-outer-spin-button,
+.apr-page .event-schedule-grid input[type="number"]::-webkit-inner-spin-button,
+.apr-page .event-schedule-grid input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.apr-page .event-category-list,
+.apr-page .event-category-review-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.apr-page .event-category-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--sr-line);
+  border-radius: 8px;
+}
+
+.apr-page .event-category-item > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.apr-page .event-category-item strong {
+  color: #25332f;
+}
+
+.apr-page .event-category-remove {
+  border: 0;
+  background: transparent;
+  color: #9c2f2f;
+  font: inherit;
+  cursor: pointer;
+}
+
+.apr-page .event-category-review-list {
+  padding-left: 18px;
+  list-style: disc;
+}
+
+@media (max-width: 540px) {
+  .apr-page .event-schedule-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .apr-page .event-schedule-grid > .sr-field:nth-child(-n + 2),
+  .apr-page .event-schedule-grid > .sr-field:nth-child(n + 4) {
+    grid-column: span 1;
+  }
+
+  .apr-page .event-schedule-grid > .sr-field:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+}

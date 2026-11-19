@@ -1,0 +1,19 @@
+.postal-code-lookup {
+  margin: 7px 0 0;
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 1.5;
+}
+
+.postal-code-lookup-loading {
+  color: #748078;
+}
+
+.postal-code-lookup-found {
+  color: #165b46;
+}
+
+.postal-code-lookup-not-found,
+.postal-code-lookup-error {
+  color: #b42318;
+}
