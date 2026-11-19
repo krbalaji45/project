@@ -1,0 +1,584 @@
+ {
+  "users": [
+    {
+      "id": "USR-1001",
+      "name": "Ragul S",
+      "email": "raguls@district.com",
+      "mobile": "+91 8763569092",
+      "status": "Active",
+      "joined": "12 Mar 2025",
+      "lastLogin": "12 Oct 2026 11:10 AM",
+      "location": "Chennai, India",
+      "permissions": {
+        "View Products": true,
+        "Place Bookings": true,
+        "Track Orders / Bookings": true,
+        "Make Payments": true,
+        "View Payment History": true,
+        "Write Reviews": true,
+        "Manage Profile": true
+      }
+    },
+    {
+      "id": "USR-1002",
+      "name": "Sowmiya",
+      "email": "sowmiya@cityspace.com",
+      "mobile": "+91 8763545322",
+      "status": "Active",
+      "joined": "10 Mar 2025",
+      "lastLogin": "10 Oct 2026 09:25 AM",
+      "location": "Chennai, India",
+      "permissions": {
+        "View Products": true,
+        "Place Bookings": true,
+        "Track Orders / Bookings": true,
+        "Make Payments": true,
+        "View Payment History": true,
+        "Write Reviews": true,
+        "Manage Profile": true
+      }
+    },
+    {
+      "id": "USR-1003",
+      "name": "Vikram K",
+      "email": "vikram@district.com",
+      "mobile": "+91 8763546642",
+      "status": "Active",
+      "joined": "09 Mar 2025",
+      "lastLogin": "09 Oct 2026 02:40 PM",
+      "location": "Coimbatore, India",
+      "permissions": {
+        "View Products": true,
+        "Place Bookings": true,
+        "Track Orders / Bookings": true,
+        "Make Payments": true,
+        "View Payment History": true,
+        "Write Reviews": true,
+        "Manage Profile": true
+      }
+    },
+    {
+      "id": "USR-1004",
+      "name": "Priya W",
+      "email": "priya@district.com",
+      "mobile": "+91 8763547311",
+      "status": "Active",
+      "joined": "05 Mar 2025",
+      "lastLogin": "08 Oct 2026 10:15 AM",
+      "location": "Chennai, India",
+      "permissions": {
+        "View Products": true,
+        "Place Bookings": true,
+        "Track Orders / Bookings": true,
+        "Make Payments": true,
+        "View Payment History": true,
+        "Write Reviews": true,
+        "Manage Profile": true
+      }
+    },
+    {
+      "id": "USR-1005",
+      "name": "Karthi T",
+      "email": "karthi@district.com",
+      "mobile": "+91 9953679842",
+      "status": "Inactive",
+      "joined": "01 Mar 2025",
+      "lastLogin": "01 Sep 2026 04:20 PM",
+      "location": "Madurai, India",
+      "permissions": {
+        "View Products": true,
+        "Place Bookings": true,
+        "Track Orders / Bookings": true,
+        "Make Payments": true,
+        "View Payment History": true,
+        "Write Reviews": true,
+        "Manage Profile": true
+      }
+    },
+    {
+      "id": "USR-1006",
+      "name": "Meena S",
+      "email": "meena@district.com",
+      "mobile": "+91 8763547002",
+      "status": "Active",
+      "joined": "27 Feb 2025",
+      "lastLogin": "07 Oct 2026 11:30 AM",
+      "location": "Chennai, India",
+      "permissions": {
+        "View Products": true,
+        "Place Bookings": true,
+        "Track Orders / Bookings": true,
+        "Make Payments": true,
+        "View Payment History": true,
+        "Write Reviews": true,
+        "Manage Profile": true
+      }
+    },
+    {
+      "id": "USR-1007",
+      "name": "Vijay S",
+      "email": "vijay@district.com",
+      "mobile": "+91 995367936",
+      "status": "Inactive",
+      "joined": "24 Feb 2025",
+      "lastLogin": "24 Aug 2026 08:05 AM",
+      "location": "Salem, India",
+      "permissions": {
+        "View Products": true,
+        "Place Bookings": true,
+        "Track Orders / Bookings": true,
+        "Make Payments": true,
+        "View Payment History": true,
+        "Write Reviews": true,
+        "Manage Profile": true
+      }
+    },
+    {
+      "id": "USR-1008",
+      "name": "Anitha R",
+      "email": "anitha.r@cityspace.com",
+      "mobile": "+91 9876543210",
+      "status": "Active",
+      "joined": "20 Feb 2025",
+      "lastLogin": "18 Oct 2026 10:15 AM",
+      "location": "Tiruchirappalli, India",
+      "permissions": {
+        "View Products": true,
+        "Place Bookings": true,
+        "Track Orders / Bookings": true,
+        "Make Payments": true,
+        "View Payment History": true,
+        "Write Reviews": true,
+        "Manage Profile": true
+      }
+    },
+    {
+      "id": "USR-1009",
+      "name": "Arun P",
+      "email": "arun.p@cityspace.com",
+      "mobile": "+91 9876543211",
+      "status": "Inactive",
+      "joined": "18 Feb 2025",
+      "lastLogin": "15 Oct 2026 04:30 PM",
+      "location": "Erode, India",
+      "permissions": {
+        "View Products": true,
+        "Place Bookings": true,
+        "Track Orders / Bookings": true,
+        "Make Payments": true,
+        "View Payment History": true,
+        "Write Reviews": true,
+        "Manage Profile": true
+      }
+    },
+    {
+      "id": "USR-1010",
+      "name": "Divya M",
+      "email": "divya.m@cityspace.com",
+      "mobile": "+91 9876543212",
+      "status": "Active",
+      "joined": "15 Feb 2025",
+      "lastLogin": "17 Oct 2026 09:05 AM",
+      "location": "Salem, India",
+      "permissions": {
+        "View Products": true,
+        "Place Bookings": true,
+        "Track Orders / Bookings": true,
+        "Make Payments": true,
+        "View Payment History": true,
+        "Write Reviews": true,
+        "Manage Profile": true
+      }
+    }
+  ],
+  "activities": [
+    {
+      "id": "ACT-1001",
+      "userId": "USR-1001",
+      "type": "Login / Logout",
+      "description": "User logged in successfully.",
+      "timestamp": "2026-10-12T11:10:00"
+    },
+    {
+      "id": "ACT-1002",
+      "userId": "USR-1001",
+      "type": "Booking Created",
+      "description": "Created a booking for CitySpace Central.",
+      "timestamp": "2026-10-11T16:42:00"
+    },
+    {
+      "id": "ACT-1003",
+      "userId": "USR-1001",
+      "type": "Payment Completed",
+      "description": "Completed payment for booking BK-2048.",
+      "timestamp": "2026-10-11T16:45:00"
+    },
+    {
+      "id": "ACT-1004",
+      "userId": "USR-1001",
+      "type": "Profile Updated",
+      "description": "Updated contact information.",
+      "timestamp": "2026-10-08T09:18:00"
+    },
+    {
+      "id": "ACT-1005",
+      "userId": "USR-1001",
+      "type": "Review Submitted",
+      "description": "Submitted a review for CitySpace Central.",
+      "timestamp": "2026-10-04T13:25:00"
+    },
+    {
+      "id": "ACT-1006",
+      "userId": "USR-1001",
+      "type": "Booking Cancelled",
+      "description": "Cancelled booking BK-1982.",
+      "timestamp": "2026-09-29T10:05:00"
+    },
+    {
+      "id": "ACT-1007",
+      "userId": "USR-1001",
+      "type": "Permission Changed",
+      "description": "Admin updated customer permissions.",
+      "timestamp": "2026-09-22T14:30:00"
+    },
+    {
+      "id": "ACT-1008",
+      "userId": "USR-1001",
+      "type": "Account Activated / Deactivated",
+      "description": "Account was activated by an administrator.",
+      "timestamp": "2026-09-18T08:40:00"
+    },
+    {
+      "id": "ACT-2001",
+      "userId": "USR-1002",
+      "type": "Login / Logout",
+      "description": "User logged in successfully.",
+      "timestamp": "2026-10-10T09:25:00"
+    },
+    {
+      "id": "ACT-3001",
+      "userId": "USR-1008",
+      "type": "Booking Created",
+      "description": "Created a booking for Fresh Basket Market.",
+      "timestamp": "2025-10-08T10:15:00"
+    },
+    {
+      "id": "ACT-3002",
+      "userId": "USR-1009",
+      "type": "Payment Completed",
+      "description": "Completed payment for booking BK-20251008-002.",
+      "timestamp": "2025-10-08T13:40:00"
+    },
+    {
+      "id": "ACT-3003",
+      "userId": "USR-1010",
+      "type": "Booking Created",
+      "description": "Created a booking for CitySpace Cinema.",
+      "timestamp": "2025-10-10T18:20:00"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "BK-20251001-001",
+      "userId": null,
+      "customer": "Rajesh kumar",
+      "phone": "+91 9978709342",
+      "vendor": "Green Foods",
+      "vendorType": "Food&Beverages",
+      "type": "Food order",
+      "date": "01 Oct 2025 10:24 AM",
+      "amount": "450",
+      "status": "Complete"
+    },
+    {
+      "id": "BK-20251001-002",
+      "userId": null,
+      "customer": "Sneha Priya",
+      "phone": "+91 9978709340",
+      "vendor": "City Mart",
+      "vendorType": "Grocery",
+      "type": "Grocery",
+      "date": "01 Oct 2025 02:30 AM",
+      "amount": "820",
+      "status": "Complete"
+    },
+    {
+      "id": "BK-20251001-003",
+      "userId": "USR-1003",
+      "customer": "Vikram",
+      "phone": "+91 9978707654",
+      "vendor": "Home Fix",
+      "vendorType": "Home Service",
+      "type": "Service",
+      "date": "02 Oct 2025 05:30 PM",
+      "amount": "1200",
+      "status": "Pending"
+    },
+    {
+      "id": "BK-20251001-004",
+      "userId": null,
+      "customer": "Lakshmi",
+      "phone": "+91 9978798040",
+      "vendor": "Dream stays",
+      "vendorType": "Accommodation",
+      "type": "Stay",
+      "date": "03 Oct 2025 05:30 PM",
+      "amount": "2500",
+      "status": "Confirmed"
+    },
+    {
+      "id": "BK-20251001-005",
+      "userId": "USR-1004",
+      "customer": "priya",
+      "phone": "+91 9978798110",
+      "vendor": "Quick Ride",
+      "vendorType": "Transport",
+      "type": "Transport",
+      "date": "04 Oct 2025 07:20 PM",
+      "amount": "2500",
+      "status": "Complete"
+    },
+    {
+      "id": "BK-20251001-006",
+      "userId": null,
+      "customer": "Arun",
+      "phone": "+91 9978791239",
+      "vendor": "StyleHUB",
+      "vendorType": "Salon & Spa",
+      "type": "Service",
+      "date": "04 Oct 2025 12:50 PM",
+      "amount": "999",
+      "status": "Cancelled"
+    },
+    {
+      "id": "BK-20251001-007",
+      "userId": "USR-1005",
+      "customer": "Karthi",
+      "phone": "+91 9978792380",
+      "vendor": "MovieMax",
+      "vendorType": "Entertainment",
+      "type": "Event",
+      "date": "06 Oct 2025 10:10 PM",
+      "amount": "600",
+      "status": "Complete"
+    },
+    {
+      "id": "BK-20251008-001",
+      "userId": "USR-1008",
+      "customer": "Anitha R",
+      "phone": "+91 9876543210",
+      "vendor": "Fresh Basket Market",
+      "vendorType": "Grocery",
+      "type": "Grocery",
+      "date": "08 Oct 2025 10:15 AM",
+      "amount": "1,150",
+      "status": "Complete"
+    },
+    {
+      "id": "BK-20251008-002",
+      "userId": "USR-1009",
+      "customer": "Arun P",
+      "phone": "+91 9876543211",
+      "vendor": "Home Fix",
+      "vendorType": "Home Service",
+      "type": "Service",
+      "date": "08 Oct 2025 01:30 PM",
+      "amount": "2,400",
+      "status": "Confirmed"
+    },
+    {
+      "id": "BK-20251009-001",
+      "userId": "USR-1006",
+      "customer": "Meena S",
+      "phone": "+91 8763547002",
+      "vendor": "Quick Ride",
+      "vendorType": "Transport",
+      "type": "Transport",
+      "date": "09 Oct 2025 08:45 AM",
+      "amount": "380",
+      "status": "Complete"
+    },
+    {
+      "id": "BK-20251009-002",
+      "userId": "USR-1007",
+      "customer": "Vijay S",
+      "phone": "+91 995367936",
+      "vendor": "StyleHUB",
+      "vendorType": "Salon & Spa",
+      "type": "Service",
+      "date": "09 Oct 2025 04:00 PM",
+      "amount": "950",
+      "status": "Pending"
+    },
+    {
+      "id": "BK-20251010-001",
+      "userId": "USR-1010",
+      "customer": "Divya M",
+      "phone": "+91 9876543212",
+      "vendor": "CitySpace Cinema",
+      "vendorType": "Entertainment",
+      "type": "Event",
+      "date": "10 Oct 2025 06:20 PM",
+      "amount": "720",
+      "status": "Complete"
+    }
+  ],
+  "payments": [
+    {
+      "userId": null,
+      "transaction": "TXN1001828",
+      "invoice": "INV-2025-01",
+      "bookingId": "BK-20251001-001",
+      "invoiceDate": "10 Oct 2025",
+      "type": "Booking payment",
+      "amount": "1,250",
+      "method": "UPI",
+      "status": "Success",
+      "date": "10 Oct 2025 02:45 PM",
+      "dateKey": "2025-10-10"
+    },
+    {
+      "userId": null,
+      "transaction": "TXN1001829",
+      "invoice": "INV-2025-02",
+      "bookingId": "—",
+      "invoiceDate": "08 Oct 2025",
+      "type": "Vendor Payout",
+      "amount": "860",
+      "method": "Bank Transfer",
+      "status": "Success",
+      "date": "08 Oct 2025 05:45 PM",
+      "dateKey": "2025-10-08"
+    },
+    {
+      "userId": "USR-1003",
+      "transaction": "TXN1001830",
+      "invoice": "INV-2025-03",
+      "bookingId": "BK-20251001-003",
+      "invoiceDate": "06 Oct 2025",
+      "type": "Refund",
+      "amount": "500",
+      "method": "UPI",
+      "status": "Success",
+      "date": "06 Oct 2025 02:45 PM",
+      "dateKey": "2025-10-06"
+    },
+    {
+      "userId": null,
+      "transaction": "TXN1001831",
+      "invoice": "INV-2025-04",
+      "bookingId": "—",
+      "invoiceDate": "06 Oct 2025",
+      "type": "Subscription",
+      "amount": "999",
+      "method": "Debit card",
+      "status": "Pending",
+      "date": "06 Oct 2025 03:45 PM",
+      "dateKey": "2025-10-06"
+    },
+    {
+      "userId": "USR-1004",
+      "transaction": "TXN1001832",
+      "invoice": "INV-2025-05",
+      "bookingId": "BK-20251001-005",
+      "invoiceDate": "04 Oct 2025",
+      "type": "Booking Payment",
+      "amount": "2500",
+      "method": "UPI",
+      "status": "Success",
+      "date": "04 Oct 2025 08:45 AM",
+      "dateKey": "2025-10-04"
+    },
+    {
+      "userId": null,
+      "transaction": "TXN1001833",
+      "invoice": "INV-2025-06",
+      "bookingId": "—",
+      "invoiceDate": "03 Oct 2025",
+      "type": "Vendor payout",
+      "amount": "750",
+      "method": "Bank Transfer",
+      "status": "Failed",
+      "date": "03 Oct 2025 08:45 PM",
+      "dateKey": "2025-10-03"
+    },
+    {
+      "userId": "USR-1005",
+      "transaction": "TXN1001834",
+      "invoice": "INV-2025-07",
+      "bookingId": "BK-20251001-007",
+      "invoiceDate": "01 Oct 2025",
+      "type": "Booking Payment",
+      "amount": "1,780",
+      "method": "UPI",
+      "status": "Success",
+      "date": "01 Oct 2025 07:45 AM",
+      "dateKey": "2025-10-01"
+    },
+    {
+      "userId": "USR-1008",
+      "transaction": "TXN1001835",
+      "invoice": "INV-2025-08",
+      "bookingId": "BK-20251008-001",
+      "invoiceDate": "08 Oct 2025",
+      "type": "Booking Payment",
+      "amount": "1,150",
+      "method": "UPI",
+      "status": "Success",
+      "date": "08 Oct 2025 10:20 AM",
+      "dateKey": "2025-10-08"
+    },
+    {
+      "userId": "USR-1009",
+      "transaction": "TXN1001836",
+      "invoice": "INV-2025-09",
+      "bookingId": "BK-20251008-002",
+      "invoiceDate": "08 Oct 2025",
+      "type": "Booking Payment",
+      "amount": "2,400",
+      "method": "Debit card",
+      "status": "Pending",
+      "date": "08 Oct 2025 01:40 PM",
+      "dateKey": "2025-10-08"
+    },
+    {
+      "userId": "USR-1006",
+      "transaction": "TXN1001837",
+      "invoice": "INV-2025-10",
+      "bookingId": "BK-20251009-001",
+      "invoiceDate": "09 Oct 2025",
+      "type": "Booking Payment",
+      "amount": "380",
+      "method": "UPI",
+      "status": "Success",
+      "date": "09 Oct 2025 08:50 AM",
+      "dateKey": "2025-10-09"
+    },
+    {
+      "userId": "USR-1007",
+      "transaction": "TXN1001838",
+      "invoice": "INV-2025-11",
+      "bookingId": "BK-20251009-002",
+      "invoiceDate": "09 Oct 2025",
+      "type": "Booking Payment",
+      "amount": "950",
+      "method": "UPI",
+      "status": "Failed",
+      "date": "09 Oct 2025 04:10 PM",
+      "dateKey": "2025-10-09"
+    },
+    {
+      "userId": "USR-1010",
+      "transaction": "TXN1001839",
+      "invoice": "INV-2025-12",
+      "bookingId": "BK-20251010-001",
+      "invoiceDate": "10 Oct 2025",
+      "type": "Booking Payment",
+      "amount": "720",
+      "method": "UPI",
+      "status": "Success",
+      "date": "10 Oct 2025 06:25 PM",
+      "dateKey": "2025-10-10"
+    }
+  ]
+}

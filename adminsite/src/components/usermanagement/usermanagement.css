@@ -1,0 +1,413 @@
+.admin-shell {
+  display: flex;
+  min-height: 100vh;
+  background: #f1f5f7;
+}
+
+.admin-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.management-topbar {
+  min-width: 0;
+  padding: 8px clamp(16px, 2vw, 28px);
+  border-bottom: 1px solid #e5eaed;
+  background: #f8fafb;
+}
+
+.management-tabs {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.management-tab {
+  flex: 0 0 auto;
+  padding: 9px 13px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  color: #687783;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.management-tab:not(.management-tab--active):hover {
+  border-color: #e5ecef;
+  background: #fff;
+  color: #287785;
+}
+
+.management-tab--active {
+  border-color: #d7e8e9;
+  background: #e8f2f3;
+  color: #205f69;
+  font-weight: 600;
+}
+
+.admin-page-content {
+  display: flex;
+  height: calc(100vh - 56px);
+  height: calc(100dvh - 56px);
+  min-width: 0;
+  width: calc(100% - 48px);
+  max-width: 1280px;
+  flex-direction: column;
+  margin: 28px auto;
+  overflow: hidden;
+  border: 1px solid #e4ebef;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(34 58 72 / 6%);
+}
+
+.admin-page-content > .management-topbar {
+  flex: 0 0 auto;
+  margin-bottom: 8px;
+}
+
+.admin-page-content > .user-list-page,
+.admin-page-content > .details-page,
+.admin-page-content > .booking-page,
+.admin-page-content > .payment-page {
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  scrollbar-color: #c5d2d5 transparent;
+  scrollbar-width: thin;
+}
+
+.admin-page-content > .user-list-page::-webkit-scrollbar,
+.admin-page-content > .details-page::-webkit-scrollbar,
+.admin-page-content > .booking-page::-webkit-scrollbar,
+.admin-page-content > .payment-page::-webkit-scrollbar {
+  width: 8px;
+}
+
+.admin-page-content > .user-list-page::-webkit-scrollbar-track,
+.admin-page-content > .details-page::-webkit-scrollbar-track,
+.admin-page-content > .booking-page::-webkit-scrollbar-track,
+.admin-page-content > .payment-page::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.admin-page-content > .user-list-page::-webkit-scrollbar-thumb,
+.admin-page-content > .details-page::-webkit-scrollbar-thumb,
+.admin-page-content > .booking-page::-webkit-scrollbar-thumb,
+.admin-page-content > .payment-page::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #c5d2d5;
+  background-clip: padding-box;
+}
+
+.admin-page-content > .user-list-page::-webkit-scrollbar-thumb:hover,
+.admin-page-content > .details-page::-webkit-scrollbar-thumb:hover,
+.admin-page-content > .booking-page::-webkit-scrollbar-thumb:hover,
+.admin-page-content > .payment-page::-webkit-scrollbar-thumb:hover {
+  background: #aabdc1;
+  background-clip: padding-box;
+}
+
+.storage-error {
+  width: calc(100% - 48px);
+  max-width: 1280px;
+  margin: 16px auto -12px;
+  color: #c7665b;
+  font-size: 12px;
+}
+
+.page-heading {
+  margin: 0;
+  color: #302f31;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+.page-subtitle {
+  margin: 4px 0 24px;
+  color: #808984;
+  font-size: 12px;
+}
+
+.history-back-button {
+  margin: 0 0 12px;
+  padding: 7px 11px;
+  border: 1px solid #d5dfe5;
+  border-radius: 6px;
+  background: #fff;
+  color: #286675;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.history-back-button:hover {
+  background: #f0f7f7;
+}
+
+.management-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.management-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #536573;
+  font-size: 11px;
+  text-align: left;
+}
+
+.management-table thead {
+  background: #eaf0f4;
+}
+
+.management-table th {
+  height: 30px;
+  padding: 7px 8px;
+  color: #4a5e6c;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.management-table td {
+  height: 53px;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.status-text {
+  font-weight: 600;
+}
+
+.status-text--success {
+  color: #18b875;
+}
+
+.status-text--warning {
+  color: #e2a522;
+}
+
+.status-text--danger {
+  color: #e25342;
+}
+
+.status-text--purple {
+  color: #9870d6;
+}
+
+.table-menu-button {
+  border: 0;
+  background: transparent;
+  color: #333;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.pill-button {
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 22px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.pill-button--green {
+  background: #08bf1b;
+}
+
+.pill-button--red {
+  background: #df3037;
+}
+
+.pill-button--pink {
+  background: #e8115b;
+}
+
+.pill-button--purple {
+  background: #c9c5f0;
+  color: #39327e;
+}
+
+.management-input,
+.management-select {
+  min-width: 0;
+  height: 37px;
+  padding: 0 13px;
+  border: 1px solid #d5dfe5;
+  border-radius: 22px;
+  background: #fff;
+  color: #536573;
+  font-size: 11px;
+}
+
+.management-input {
+  width: 100%;
+}
+
+.management-search {
+  position: relative;
+  display: flex;
+  width: min(100%, 300px);
+  align-items: center;
+}
+
+.management-search span {
+  position: absolute;
+  left: 12px;
+  color: #8b9aa5;
+}
+
+.management-search input {
+  padding-left: 35px;
+}
+
+.management-filters {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+.filter-field {
+  display: flex;
+  min-width: 120px;
+  flex-direction: column;
+  gap: 5px;
+  color: #748078;
+  font-size: 10px;
+}
+
+.filter-field .management-select {
+  width: 100%;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 24px 0 10px;
+}
+
+.section-strip {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 8px 10px;
+  background: #edf3f5;
+  color: #536573;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.member-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.member-avatar {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: #dceef0;
+  color: #286675;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.member-name {
+  margin: 0 0 4px;
+  color: #344b5a;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.member-meta {
+  color: #788994;
+  font-size: 10px;
+}
+
+.history-tabs,
+.details-tabs {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  border-bottom: 1px solid #e3eaee;
+}
+
+.history-tab,
+.details-tab {
+  padding: 12px 0 9px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #5b6d79;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.history-tab--active,
+.details-tab--active {
+  border-bottom-color: #3e8490;
+  color: #286675;
+}
+
+.empty-state {
+  padding: 28px 10px;
+  color: #788994;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .management-topbar {
+    padding-inline: 16px;
+  }
+
+  .management-tabs {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 620px) {
+  .management-tabs {
+    gap: 18px;
+  }
+
+  .admin-page-content {
+    height: calc(100vh - 32px);
+    height: calc(100dvh - 32px);
+    width: calc(100% - 24px);
+    margin: 16px auto;
+  }
+
+  .storage-error {
+    width: calc(100% - 24px);
+    margin: 12px auto -8px;
+  }
+
+  .page-heading {
+    font-size: 27px;
+  }
+
+  .management-filters,
+  .filter-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .filter-field {
+    width: 100%;
+  }
+}
