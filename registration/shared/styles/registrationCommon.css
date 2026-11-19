@@ -1,0 +1,30 @@
+@import "../../stores/StoresRegistration.css";
+@import "./activitiesPlayRegistration.css";
+
+.sr-opening-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-bottom: 12px;
+}
+
+.sr-opening-presets label {
+  color: #35433f;
+  align-items: center;
+  display: inline-flex;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.sr-opening-presets input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: var(--sr-green);
+}
+
+.sr-opening-presets input:focus-visible {
+  outline: 2px solid rgba(0, 81, 70, 0.35);
+  outline-offset: 2px;
+}

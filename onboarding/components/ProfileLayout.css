@@ -1,0 +1,971 @@
+/* =========================================
+   MAIN PROFILE LAYOUT
+========================================= */
+
+.profile-layout {
+  height: 100vh;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  background: #f3f4f2;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   LEFT SIDEBAR
+========================================= */
+
+.profile-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 300px;
+  height: 100vh;
+
+  background: #ffffff;
+  border-right: 1px solid #e2e6e3;
+
+  padding: 35px 24px;
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+
+  z-index: 10;
+}
+
+
+/* =========================================
+   SIDEBAR HEADER
+========================================= */
+
+.profile-sidebar-header {
+  margin-bottom: 30px;
+}
+
+.profile-sidebar-header h2 {
+  margin: 0 0 8px;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  color: #075d4d;
+}
+
+.profile-sidebar-header p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: #7a817e;
+}
+
+
+/* =========================================
+   PROFILE STEPS
+========================================= */
+
+.profile-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* =========================================
+   STEP LINK
+========================================= */
+
+.profile-step {
+  width: 100%;
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 12px 14px;
+
+  box-sizing: border-box;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  color: #26312e;
+
+  transition: 0.2s ease;
+
+  cursor: pointer;
+}
+
+
+/* Remove browser link styling */
+
+.profile-step:visited {
+  color: #26312e;
+}
+
+.profile-step:hover {
+  text-decoration: none;
+}
+
+
+/* =========================================
+   ACTIVE STEP
+========================================= */
+
+.profile-step.active {
+  background: #e7f4ef;
+
+  color: #075d4d;
+}
+
+.profile-step.active h4,
+.profile-step.active p {
+  color: #075d4d;
+}
+
+
+/* =========================================
+   STEP NUMBER
+========================================= */
+
+.step-number {
+  width: 40px;
+  height: 40px;
+
+  min-width: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #edf2f0;
+
+  color: #075d4d;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* Active number */
+
+.profile-step.active .step-number {
+  background: #075d4d;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   STEP TEXT
+========================================= */
+
+.profile-step h4 {
+  margin: 0 0 4px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #26312e;
+}
+
+.profile-step p {
+  margin: 0;
+
+  font-size: 12px;
+
+  color: #89918e;
+}
+
+
+/* =========================================
+   LOCKED STEPS
+========================================= */
+
+.profile-step.locked {
+  cursor: not-allowed;
+
+  opacity: 0.55;
+
+  background: #f7f8f7;
+}
+
+.profile-step.locked .step-number {
+  background: #e8edeb;
+  color: #7f8985;
+}
+
+
+/* =========================================
+   NEW MEMBER BUTTON
+========================================= */
+
+.new-member-button {
+  width: 100%;
+
+  margin-top: 30px;
+
+  padding: 12px 15px;
+
+  border: 1px solid #075d4d;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #075d4d;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.new-member-button:hover {
+  background: #075d4d;
+  color: #ffffff;
+}
+
+
+/* =========================================
+   RIGHT SIDE CONTENT
+========================================= */
+
+.profile-content {
+  margin-left: 300px;
+
+  width: calc(100% - 300px);
+
+  height: 100vh;
+  min-height: 0;
+
+  box-sizing: border-box;
+
+  padding: 45px 55px;
+
+  background: #f3f4f2;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+}
+
+.vendor-identity {
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+  margin: 0 0 18px;
+}
+
+.vendor-identity > div {
+  display: grid;
+  gap: 4px;
+  text-align: right;
+}
+
+.vendor-identity span {
+  color: #78837f;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.vendor-identity strong {
+  color: #075d4d;
+  font-size: 13px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.form-card {
+  width: 100%;
+  max-width: none;
+
+  margin: 0 auto;
+
+  padding: 35px 40px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.profile-summary-card {
+  max-width: none;
+  padding: 36px 42px;
+}
+
+.profile-summary-card .form-header {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e6ebe8;
+}
+
+.profile-summary-card .form-header h2 {
+  font-size: 28px;
+}
+
+.summary-section {
+  padding: 22px 0 24px;
+  border-bottom: 1px solid #e6ebe8;
+}
+
+.summary-section-header {
+  margin-bottom: 18px;
+}
+
+.summary-section-header h3 {
+  margin: 0;
+  color: #075d4d;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.summary-subsection + .summary-subsection {
+  margin-top: 22px;
+}
+
+.summary-subsection h4 {
+  margin: 0 0 14px;
+  color: #26312e;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+}
+
+.summary-grid > div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.summary-grid > .full-width {
+  grid-column: 1 / -1;
+}
+
+.summary-grid span {
+  color: #78837f;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.summary-grid strong {
+  overflow-wrap: anywhere;
+  color: #26312e;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.summary-grid input,
+.summary-grid select,
+.summary-grid textarea {
+  width: 100%;
+  min-height: 42px;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #d6dcda;
+  border-radius: 6px;
+  background: #fff;
+  color: #26312e;
+  font: inherit;
+  font-size: 14px;
+}
+
+.summary-grid textarea {
+  min-height: 84px;
+  resize: vertical;
+}
+
+.summary-grid input:focus,
+.summary-grid select:focus,
+.summary-grid textarea:focus {
+  border-color: #075d4d;
+  outline: 2px solid rgba(7, 93, 77, 0.12);
+  outline-offset: 1px;
+}
+
+.summary-grid .accepted-status {
+  color: #08764e;
+}
+
+.summary-submit {
+  align-items: center;
+}
+
+.summary-message {
+  flex: 1 1 100%;
+  margin: 0;
+  font-size: 13px;
+}
+
+.summary-message.success {
+  color: #08764e;
+}
+
+.summary-message.error {
+  color: #c0392b;
+}
+
+.summary-cancel-button,
+.summary-edit-button {
+  border: 1px solid #075d4d;
+  background: #fff;
+  color: #075d4d;
+}
+
+.summary-cancel-button:hover,
+.summary-edit-button:hover {
+  background: #edf6f2;
+}
+
+
+/* =========================================
+   FORM HEADER
+========================================= */
+
+.form-header {
+  margin-bottom: 30px;
+}
+
+.form-header h2 {
+  margin: 0 0 8px;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  color: #075d4d;
+}
+
+.form-header p {
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #7b8581;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #26312e;
+}
+
+.profile-readonly .form-group p {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid #e2e8e5;
+  border-radius: 8px;
+  background: #f8faf9;
+  color: #26312e;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d6dcda;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #26312e;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: border 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #075d4d;
+
+  box-shadow: 0 0 0 2px rgba(7, 93, 77, 0.08);
+}
+
+.date-picker-control {
+  position: relative;
+}
+
+.date-picker-control input[type="date"] {
+  padding-right: 48px;
+}
+
+.date-picker-button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  transform: translateY(-50%);
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #075d4d;
+  cursor: pointer;
+}
+
+.date-picker-button:hover,
+.date-picker-button:focus-visible {
+  background: #e7f4ef;
+}
+
+.form-group textarea {
+  min-height: 100px;
+
+  resize: vertical;
+
+  font-family: inherit;
+}
+
+
+/* =========================================
+   EMAIL ROW
+========================================= */
+
+.email-row {
+  display: flex;
+
+  gap: 10px;
+
+  align-items: flex-start;
+}
+
+.email-row input {
+  flex: 1;
+}
+
+
+/* =========================================
+   VERIFY BUTTON
+========================================= */
+
+.verify-button {
+  min-width: 95px;
+
+  padding: 12px 16px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #075d4d;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.verify-button:hover {
+  background: #064d40;
+}
+
+.verify-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   SAVE BUTTON
+========================================= */
+
+.summary-submit {
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 30px;
+
+  flex-wrap: wrap;
+}
+
+.form-footer {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: 30px;
+}
+
+.save-button {
+  padding: 13px 24px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #075d4d;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background: #064d40;
+}
+
+.save-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.input-error {
+  margin: 6px 0 0;
+
+  color: #d93025;
+
+  font-size: 12px;
+}
+
+.kyc-status-message {
+  margin: 0 0 18px;
+  color: #08764e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   FILE NAME BUTTON
+========================================= */
+
+.file-name-button {
+  margin-top: 8px;
+
+  padding: 7px 10px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #075d4d;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  text-decoration: underline;
+
+  text-align: left;
+}
+
+.file-picker-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border: 1px solid #d6dcda;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.upload-hint {
+  margin: 6px 0 0;
+  color: #78837f;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.file-picker-button {
+  flex: 0 0 auto;
+  padding: 9px 14px;
+  border: 1px solid #075d4d;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #075d4d;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.file-picker-button:hover {
+  background: #edf6f2;
+}
+
+.file-name-button:disabled {
+  color: #999999;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   AGREEMENT
+========================================= */
+
+.agreement-container {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.agreement-content {
+  max-height: 320px;
+
+  overflow-y: auto;
+
+  padding: 20px 18px;
+
+  border: 1px solid #d6dcda;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  line-height: 1.6;
+}
+
+.agreement-check {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 14px;
+
+  border: 1px solid #d6dcda;
+
+  border-radius: 8px;
+
+  background: #fafcfb;
+}
+
+.agreement-check input {
+  width: 18px;
+  height: 18px;
+
+  accent-color: #075d4d;
+}
+
+.agreement-check label {
+  color: #26312e;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   KYC CARDS
+========================================= */
+
+.kyc-cards {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 24px;
+}
+
+.kyc-card {
+  padding: 24px;
+
+  border: 1px solid #e1e6e3;
+
+  border-radius: 12px;
+
+  background: #fafcfb;
+}
+
+.kyc-card h3 {
+  margin: 0 0 22px;
+
+  color: #075d4d;
+
+  font-size: 18px;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.loading-message {
+  width: 100%;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  color: #075d4d;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .profile-sidebar {
+    width: 240px;
+  }
+
+  .profile-content {
+    margin-left: 240px;
+
+    width: calc(100% - 240px);
+
+    padding: 30px;
+  }
+
+  .kyc-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .profile-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-sidebar {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    max-height: 38vh;
+    flex: 0 1 auto;
+
+    border-right: none;
+    border-bottom: 1px solid #e2e6e3;
+    overflow-y: auto;
+  }
+
+  .profile-content {
+    margin-left: 0;
+
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    flex: 1 1 auto;
+
+    padding: 25px 18px;
+  }
+
+  .form-card {
+    padding: 25px 20px;
+  }
+
+  .profile-summary-card {
+    padding: 24px 18px;
+  }
+
+  .summary-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .summary-grid > .full-width {
+    grid-column: auto;
+  }
+
+  .summary-submit {
+    justify-content: stretch;
+  }
+
+  .summary-submit .save-button {
+    flex: 1 1 calc(50% - 6px);
+  }
+
+  .email-row {
+    flex-direction: column;
+  }
+
+  .email-row input,
+  .verify-button {
+    width: 100%;
+  }
+}
+
+.file-picker-placeholder {
+  min-width: 0;
+  overflow: hidden;
+  color: #78837f;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

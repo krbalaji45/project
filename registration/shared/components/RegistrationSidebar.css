@@ -1,0 +1,162 @@
+.registration-sidebar {
+  --registration-green: #005146;
+  position: sticky;
+  top: 0;
+  align-self: center;
+  padding: 12px 0;
+}
+
+.registration-sidebar h1 {
+  max-width: 510px;
+  margin: 0;
+  color: #101d1b;
+  font-size: clamp(40px, 5vw, 62px);
+  font-weight: 750;
+  letter-spacing: -2.5px;
+  line-height: 1.03;
+}
+
+.registration-sidebar-copy {
+  max-width: 440px;
+  margin: 15px 0 40px;
+  color: #475854;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.registration-steps {
+  display: grid;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.registration-steps-item {
+  min-width: 0;
+}
+
+.registration-step-button {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: start;
+  gap: 16px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.registration-step-number {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 50%;
+  background: #e4b3f5;
+  color: #241532;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.registration-step-button.is-active .registration-step-number {
+  background: var(--registration-green);
+  color: #fff;
+}
+
+.registration-step-copy {
+  display: grid;
+  gap: 5px;
+  padding-top: 2px;
+}
+
+.registration-step-title {
+  color: #152421;
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.registration-step-description {
+  max-width: 300px;
+  color: #677773;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.registration-step-button:focus-visible {
+  outline: 3px solid rgba(0, 81, 70, .35);
+  outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  .registration-sidebar h1 {
+    font-size: clamp(36px, 5vw, 48px);
+    letter-spacing: -1.8px;
+  }
+
+  .registration-sidebar-copy {
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 700px) {
+  .registration-sidebar {
+    position: static;
+    padding: 6px 2px 0;
+  }
+
+  .registration-sidebar h1 {
+    max-width: 540px;
+    font-size: clamp(36px, 10vw, 48px);
+  }
+
+  .registration-sidebar-copy {
+    margin: 10px 0 0;
+    font-size: 14px;
+  }
+
+  .registration-steps {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+    padding-bottom: 5px;
+    overflow-x: auto;
+  }
+
+  .registration-steps-item {
+    flex: 0 0 190px;
+  }
+
+  .registration-step-button {
+    grid-template-columns: 38px 1fr;
+    gap: 9px;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid rgba(16, 34, 31, .1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .58);
+  }
+
+  .registration-step-button.is-active {
+    border-color: rgba(0, 81, 70, .45);
+    background: rgba(255, 255, 255, .9);
+  }
+
+  .registration-step-number {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .registration-step-title {
+    font-size: 12px;
+  }
+
+  .registration-step-description {
+    font-size: 10px;
+  }
+}
